@@ -1,0 +1,55 @@
+.none {
+    width: 10%;
+    display: none;
+}
+
+.show {
+    width: 10%;
+    display: '';
+}
+
+#actionCard {
+    width: 10%;
+    animation-name: leftTransition;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leftTransition {
+    from {
+        width: 10%;
+    }
+
+    to {
+        width: 25%;
+    }
+}
+
+@media (max-width: 760px) {
+    .none {
+        width: 25%;
+        display: none;
+    }
+
+    .show {
+        width: 25%;
+        display: '';
+    }
+
+    #actionCard {
+        width: 25%;
+        animation-name: leftTransition;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes leftTransition {
+        from {
+            width: 25%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+}
